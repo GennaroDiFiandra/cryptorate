@@ -1,0 +1,14 @@
+.AppTitle {
+  font-family: var(--f-heading);
+  font-size: var(--s-xl);
+  text-align: center;
+  color: var(--c-main-light);
+}
+
+.AppSubtitle {
+  font-family: var(--f-body);
+  font-style: italic;
+  font-size: var(--s-m);
+  text-align: center;
+  color: var(--c-main-extra-light);
+}

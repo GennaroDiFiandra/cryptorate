@@ -1,0 +1,11 @@
+.CryptoList {
+  margin: 0 auto;
+}
+
+.CryptoHead {
+  font-family: var(--f-body);
+  font-size: var(--s-m);
+  text-align: center;
+  color: var(--c-main-extra-light);
+  padding: var(--s-xs) var(--s);
+}

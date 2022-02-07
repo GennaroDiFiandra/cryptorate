@@ -1,0 +1,15 @@
+.CryptoName {
+  font-family: var(--f-body);
+  font-size: var(--s-m);
+  text-align: left;
+  color: var(--c-main-extra-light);
+  padding: var(--s-xs) var(--s);
+}
+
+.CryptoValue {
+  font-family: var(--f-body);
+  font-size: var(--s-m);
+  text-align: right;
+  color: var(--c-main-extra-light);
+  padding: var(--s-xs) var(--s);
+}

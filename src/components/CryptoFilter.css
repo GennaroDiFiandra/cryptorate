@@ -1,0 +1,21 @@
+.CryptoFilter {
+  text-align: center;
+}
+
+.CryptoFilterInput {
+  font-family: var(--f-body);
+  background-color: var(--c-main-extra-light);
+  color: var(--c-main-extra-dark);
+  border-width: 0;
+  padding: var(--s-s) var(--s);
+  transition: outline var(--transition-setup);
+}
+
+.CryptoFilterInput::placeholder {
+  font-style: italic;
+  color: var(--c-main-extra-dark);
+}
+
+.CryptoFilterInput:focus-visible {
+  outline: var(--c-main-light) var(--outline-setup);
+}

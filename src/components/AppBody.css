@@ -1,0 +1,4 @@
+.AppBody {
+  margin-top: var(--s);
+  margin-bottom: var(--s-xl);
+}

@@ -1,0 +1,25 @@
+.AppFooter {
+  margin-top: auto;
+}
+
+.AppCopyright {
+  font-family: var(--f-body);
+  font-style: italic;
+  font-size: var(--s);
+  text-align: center;
+  color: var(--c-main-extra-light);
+}
+
+.AppCopyright :link {
+  color: var(--c-complementary);
+}
+
+.AppCopyright :hover,
+.AppCopyright :focus,
+.AppCopyright :active {
+  text-decoration: none;
+}
+
+.AppCopyright :visited {
+  color: var(--c-main-extra-light);
+}

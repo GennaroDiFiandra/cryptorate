@@ -1,0 +1,9 @@
+.App {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--c-main);
+  background: linear-gradient(to bottom, var(--c-main), var(--c-main-dark), var(--c-main-extra-dark));
+}
