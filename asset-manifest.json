@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cryptorate/static/css/main.743efe82.css",
+    "main.js": "/cryptorate/static/js/main.0080e0fc.js",
+    "index.html": "/cryptorate/index.html",
+    "main.743efe82.css.map": "/cryptorate/static/css/main.743efe82.css.map",
+    "main.0080e0fc.js.map": "/cryptorate/static/js/main.0080e0fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.743efe82.css",
+    "static/js/main.0080e0fc.js"
+  ]
+}
