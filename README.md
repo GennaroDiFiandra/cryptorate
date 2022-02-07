@@ -1,6 +1,6 @@
 # Crypto Rate
 
-È un'app che mostra il valore in Bitcoin di alcune cryptovalute. Consente di filtrare la lista per nome.
+È un'app che mostra il valore in Bitcoin di alcune cryptovalute. Consente di filtrare la lista per nome. [[PROVALA →]](https://gennarodifiandra.github.io/cryptorate/)
 
 ## Tecnicamente
 
