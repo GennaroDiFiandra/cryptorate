@@ -10,7 +10,7 @@ import Message from './Message';
 function App() {
   const [cryptoList, setCryptoList] = useState([])
   const [cryptoFilteredList, setCryptoFilteredList] = useState(cryptoList)
-  const [hasFethDataError, setHasFethDataError] = useState(false)
+  const [hasFetchDataError, setHasFetchDataError] = useState(false)
 
   const onCryptoFilterChange = (event) => {
     setCryptoFilteredList(cryptoList.filter(crypto => crypto.name.toLowerCase().includes(event.target.value.toLowerCase())))
@@ -26,7 +26,7 @@ function App() {
         setCryptoList(Object.values(data.rates))
         setCryptoFilteredList(Object.values(data.rates))
       } catch (error) {
-        setHasFethDataError(true)
+        setHasFetchDataError(true)
       }
     }
 
@@ -38,7 +38,7 @@ function App() {
     <div className="App">
       <AppHeader />
       <AppBody>
-        {(!hasFethDataError) ?
+        {(!hasFetchDataError) ?
           <>
             <CryptoFilter onCryptoFilterChange={onCryptoFilterChange} />
             <CryptoList cryptoList={cryptoFilteredList} />
