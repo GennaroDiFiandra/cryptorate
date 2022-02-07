@@ -5,10 +5,12 @@ import AppBody from './AppBody';
 import CryptoFilter from './CryptoFilter';
 import CryptoList from './CryptoList';
 import AppFooter from './AppFooter';
+import Message from './Message';
 
 function App() {
   const [cryptoList, setCryptoList] = useState([])
   const [cryptoFilteredList, setCryptoFilteredList] = useState(cryptoList)
+  const [hasFethDataError, setHasFethDataError] = useState(false)
 
   const onCryptoFilterChange = (event) => {
     setCryptoFilteredList(cryptoList.filter(crypto => crypto.name.toLowerCase().includes(event.target.value.toLowerCase())))
@@ -24,7 +26,7 @@ function App() {
         setCryptoList(Object.values(data.rates))
         setCryptoFilteredList(Object.values(data.rates))
       } catch (error) {
-        console.log('error', error)
+        setHasFethDataError(true)
       }
     }
 
@@ -36,8 +38,15 @@ function App() {
     <div className="App">
       <AppHeader />
       <AppBody>
-        <CryptoFilter onCryptoFilterChange={onCryptoFilterChange} />
-        <CryptoList cryptoList={cryptoFilteredList} />
+        {(!hasFethDataError) ?
+          <>
+            <CryptoFilter onCryptoFilterChange={onCryptoFilterChange} />
+            <CryptoList cryptoList={cryptoFilteredList} />
+          </> :
+          <div className='MessageWrapper'>
+            <Message content='Sorry, there was a problem. Please, try to reload the page.' />
+          </div>
+        }
       </AppBody>
       <AppFooter />
     </div>

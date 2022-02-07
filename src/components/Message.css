@@ -1,0 +1,13 @@
+.MessageWrapper {
+  margin: 0 auto;
+}
+
+.Message {
+  font-family: var(--f-body);
+  font-size: var(--s-l);
+  font-style: italic;
+  text-align: center;
+  background-color: var(--c-complementary);
+  color: var(--c-main-extra-dark);
+  padding: var(--s-xs) var(--s);
+}

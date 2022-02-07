@@ -2,9 +2,9 @@ import './AppBody.css'
 
 function AppBody(props) {
   return (
-    <div className="AppBody">
+    <main className="AppBody">
       {props.children}
-    </div>
+    </main>
   );
 }
 
