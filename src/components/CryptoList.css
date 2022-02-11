@@ -2,7 +2,7 @@
   margin: 0 auto;
 }
 
-.CryptoHead {
+.CryptoList__head {
   font-family: var(--f-body);
   font-size: var(--s-m);
   text-align: center;

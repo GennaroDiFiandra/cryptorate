@@ -1,4 +1,4 @@
-.CryptoName {
+.Crypto__name {
   font-family: var(--f-body);
   font-size: var(--s-m);
   text-align: left;
@@ -6,7 +6,7 @@
   padding: var(--s-xs) var(--s);
 }
 
-.CryptoValue {
+.Crypto__value {
   font-family: var(--f-body);
   font-size: var(--s-m);
   text-align: right;

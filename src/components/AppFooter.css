@@ -2,7 +2,7 @@
   margin-top: auto;
 }
 
-.AppCopyright {
+.AppFooter__copyright {
   font-family: var(--f-body);
   font-style: italic;
   font-size: var(--s);
@@ -10,16 +10,16 @@
   color: var(--c-main-extra-light);
 }
 
-.AppCopyright :link {
+.AppFooter__copyright :link {
   color: var(--c-complementary);
 }
 
-.AppCopyright :hover,
-.AppCopyright :focus,
-.AppCopyright :active {
+.AppFooter__copyright :hover,
+.AppFooter__copyright :focus,
+.AppFooter__copyright :active {
   text-decoration: none;
 }
 
-.AppCopyright :visited {
+.AppFooter__copyright :visited {
   color: var(--c-main-extra-light);
 }

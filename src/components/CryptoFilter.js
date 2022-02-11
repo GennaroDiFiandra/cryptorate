@@ -3,7 +3,7 @@ import './CryptoFilter.css';
 function CryptoFilter({ onCryptoFilterChange }) {
   return (
     <div className="CryptoFilter">
-      <input className="CryptoFilterInput" type="search" placeholder="filter by crypto name" onChange={onCryptoFilterChange} />
+      <input className="CryptoFilter__input" type="search" placeholder="filter by crypto name" onChange={onCryptoFilterChange} />
     </div>
   );
 }

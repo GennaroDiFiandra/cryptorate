@@ -3,12 +3,12 @@ import Crypto from './Crypto';
 
 function CryptoList({ cryptoList }) {
   return (
-    <div className='CryptoListWrapper'>
+    <div className='CryptoList__wrapper'>
       <table className='CryptoList'>
         <thead>
           <tr>
-            <th className='CryptoHead'>Name</th>
-            <th className='CryptoHead'>Value</th>
+            <th className='CryptoList__head'>Name</th>
+            <th className='CryptoList__head'>Value</th>
           </tr>
         </thead>
         <tbody>

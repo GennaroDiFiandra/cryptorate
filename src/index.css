@@ -10,6 +10,12 @@ input, button, textarea, select {font: inherit;}
 p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
 #root, #__next {isolation: isolate;min-height: 100%;}
 
+* {scrollbar-color: var(--c-main-extra-light) var(--c-main-extra-dark);}
+*::-webkit-scrollbar-thumb {background: var(--c-main-extra-light);}
+*::-webkit-scrollbar-track {background: var(--c-main-extra-dark);}
+* {scrollbar-width: thin;}
+*::-webkit-scrollbar {width: var(--s-xxs);height: var(--s-xxs);}
+
 /*
   Custom Properties
 */
@@ -39,12 +45,3 @@ p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
   --outline-setup: solid .5rem;
   --transition-setup: .320s ease-in-out;
 }
-
-/*
-  Scrollbars
-*/
-* {scrollbar-color: var(--c-main-extra-light) var(--c-main-extra-dark);}
-*::-webkit-scrollbar-thumb {background: var(--c-main-extra-light);}
-*::-webkit-scrollbar-track {background: var(--c-main-extra-dark);}
-* {scrollbar-width: thin;}
-*::-webkit-scrollbar {width: var(--s-xxs);height: var(--s-xxs);}
