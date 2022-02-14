@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react';
 import './CryptoFilter.css';
 
 function CryptoFilter({ onCryptoFilterChange }) {
-
   const inputFilter = useRef();
 
   useEffect(() => {
