@@ -29,7 +29,7 @@ function App() {
   }, []);
 
   const onCryptoFilterChange = (event) => {
-    setCryptoFilteredList(cryptoList.filter(crypto => crypto.name.toLowerCase().includes(event.target.value.toLowerCase())));
+    setCryptoFilteredList(cryptoList.filter(crypto => crypto.name.toLowerCase().includes(event.target.value.toLowerCase().trim())));
   };
 
   return (
