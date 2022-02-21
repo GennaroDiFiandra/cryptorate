@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/cryptorate/static/css/main.7ca2939c.css",
-    "main.js": "/cryptorate/static/js/main.ea540332.js",
+    "main.css": "/cryptorate/static/css/main.9f8e7bc8.css",
+    "main.js": "/cryptorate/static/js/main.70fb6309.js",
     "index.html": "/cryptorate/index.html",
-    "main.7ca2939c.css.map": "/cryptorate/static/css/main.7ca2939c.css.map",
-    "main.ea540332.js.map": "/cryptorate/static/js/main.ea540332.js.map"
+    "main.9f8e7bc8.css.map": "/cryptorate/static/css/main.9f8e7bc8.css.map",
+    "main.70fb6309.js.map": "/cryptorate/static/js/main.70fb6309.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ca2939c.css",
-    "static/js/main.ea540332.js"
+    "static/css/main.9f8e7bc8.css",
+    "static/js/main.70fb6309.js"
   ]
 }
