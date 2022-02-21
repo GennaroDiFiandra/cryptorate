@@ -1,5 +1,5 @@
 .AppFooter {
-  margin-top: auto;
+  margin-block-start: auto;
 }
 
 .AppFooter__copyright {
@@ -14,12 +14,12 @@
   color: var(--c-complementary);
 }
 
+.AppFooter__copyright :visited {
+  color: var(--c-main-extra-light);
+}
+
 .AppFooter__copyright :hover,
 .AppFooter__copyright :focus,
 .AppFooter__copyright :active {
   text-decoration: none;
-}
-
-.AppFooter__copyright :visited {
-  color: var(--c-main-extra-light);
 }

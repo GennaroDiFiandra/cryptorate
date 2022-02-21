@@ -6,8 +6,8 @@
   font-family: var(--f-body);
   background-color: var(--c-main-extra-light);
   color: var(--c-main-extra-dark);
-  border-width: 0;
   padding: var(--s-s) var(--s);
+  border-width: 0;
   transition: outline var(--transition-setup);
 }
 

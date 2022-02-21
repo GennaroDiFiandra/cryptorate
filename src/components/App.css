@@ -5,5 +5,10 @@
   display: flex;
   flex-direction: column;
   background: var(--c-main);
-  background: linear-gradient(to bottom, var(--c-main), var(--c-main-dark), var(--c-main-extra-dark));
+  background: linear-gradient(
+    to bottom,
+    var(--c-main),
+    var(--c-main-dark),
+    var(--c-main-extra-dark)
+  );
 }

@@ -1,4 +1,4 @@
 .AppBody {
-  margin-top: var(--s);
-  margin-bottom: var(--s-xl);
+  margin-block-start: var(--s);
+  margin-block-end: var(--s-xl);
 }

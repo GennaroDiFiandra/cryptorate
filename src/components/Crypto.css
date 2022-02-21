@@ -1,7 +1,7 @@
 .Crypto__name {
   font-family: var(--f-body);
   font-size: var(--s-m);
-  text-align: left;
+  text-align: start;
   color: var(--c-main-extra-light);
   padding: var(--s-xs) var(--s);
 }
