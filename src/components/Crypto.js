@@ -1,4 +1,4 @@
-import './Crypto.css';
+import "./Crypto.css";
 
 function Crypto({ name, value }) {
   return (

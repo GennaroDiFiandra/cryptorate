@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
-import './App.css';
-import Message from './Message';
-import AppHeader from './AppHeader';
-import AppBody from './AppBody';
-import CryptoFilter from './CryptoFilter';
-import CryptoList from './CryptoList';
-import AppFooter from './AppFooter';
+import { useEffect, useState } from "react";
+import "./App.css";
+import Message from "./Message";
+import AppHeader from "./AppHeader";
+import AppBody from "./AppBody";
+import CryptoFilter from "./CryptoFilter";
+import CryptoList from "./CryptoList";
+import AppFooter from "./AppFooter";
 
 function App() {
   const [cryptoList, setCryptoList] = useState([]);
@@ -13,7 +13,7 @@ function App() {
   const [hasFetchDataError, setHasFetchDataError] = useState(false);
 
   useEffect(() => {
-    const endpoint = 'https://api.coingecko.com/api/v3/exchange_rates';
+    const endpoint = "https://api.coingecko.com/api/v3/exchange_rates";
 
     (async () => {
       try {
@@ -25,24 +25,30 @@ function App() {
         setHasFetchDataError(true);
       }
     })();
-
   }, []);
 
-  const onCryptoFilterChange = (event) => {
-    setCryptoFilteredList(cryptoList.filter(crypto => crypto.name.toLowerCase().includes(event.target.value.toLowerCase().trim())));
+  const onCryptoFilterChange = event => {
+    setCryptoFilteredList(
+      cryptoList.filter(crypto =>
+        crypto.name
+          .toLowerCase()
+          .includes(event.target.value.toLowerCase().trim()),
+      ),
+    );
   };
 
   return (
-    <div className="App">
+    <div className='App'>
       <AppHeader />
       <AppBody>
-        {(!hasFetchDataError) ?
+        {!hasFetchDataError ? (
           <>
             <CryptoFilter onCryptoFilterChange={onCryptoFilterChange} />
             <CryptoList cryptoList={cryptoFilteredList} />
-          </> :
+          </>
+        ) : (
           <Message content='Sorry, there was a problem. Please, try to reload the page.' />
-        }
+        )}
       </AppBody>
       <AppFooter />
     </div>

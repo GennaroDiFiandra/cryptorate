@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import './CryptoFilter.css';
+import { useEffect, useRef } from "react";
+import "./CryptoFilter.css";
 
 function CryptoFilter({ onCryptoFilterChange }) {
   const inputFilter = useRef();
@@ -9,8 +9,14 @@ function CryptoFilter({ onCryptoFilterChange }) {
   }, []);
 
   return (
-    <div className="CryptoFilter">
-      <input className="CryptoFilter__input" type="search" placeholder="filter by crypto name" onChange={onCryptoFilterChange} ref={inputFilter} />
+    <div className='CryptoFilter'>
+      <input
+        className='CryptoFilter__input'
+        type='search'
+        placeholder='filter by crypto name'
+        onChange={onCryptoFilterChange}
+        ref={inputFilter}
+      />
     </div>
   );
 }

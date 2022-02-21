@@ -1,8 +1,12 @@
-import './CryptoList.css';
-import Crypto from './Crypto';
+import "./CryptoList.css";
+import Crypto from "./Crypto";
 
 function CryptoList({ cryptoList }) {
-  const FinalCryptoList = cryptoList.filter(crypto => crypto.type === 'crypto' && crypto.name !== 'Bitcoin').map(crypto => <Crypto key={crypto.unit} name={crypto.name} value={crypto.value} />);
+  const FinalCryptoList = cryptoList
+    .filter(crypto => crypto.type === "crypto" && crypto.name !== "Bitcoin")
+    .map(crypto => (
+      <Crypto key={crypto.unit} name={crypto.name} value={crypto.value} />
+    ));
 
   return (
     <div className='CryptoList__wrapper'>
@@ -13,9 +17,7 @@ function CryptoList({ cryptoList }) {
             <th className='CryptoList__head'>Value</th>
           </tr>
         </thead>
-        <tbody>
-          {FinalCryptoList}
-        </tbody>
+        <tbody>{FinalCryptoList}</tbody>
       </table>
     </div>
   );
